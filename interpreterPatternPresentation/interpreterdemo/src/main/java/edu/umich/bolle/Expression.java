@@ -1,5 +1,6 @@
 package edu.umich.bolle;
 
 public interface Expression {
-    int interpret(Context context);
+    // root abstraction for interpreter pattern
+    double interpret(Context context);
 }

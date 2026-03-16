@@ -1,12 +1,12 @@
 package edu.umich.bolle;
 
 public class Context {
-    private int input;
+    private double input;
 
-    public Context(int input) {
+    public Context(double input) {
         this.input = input;
     }
-    public int getInput() {
+    public double getInput() {
         return input;
     }
 }
