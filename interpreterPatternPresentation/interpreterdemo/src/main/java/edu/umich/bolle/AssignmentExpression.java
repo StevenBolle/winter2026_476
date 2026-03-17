@@ -15,6 +15,13 @@ public class AssignmentExpression implements Expression {
         this.expression = expression;
     }
 
+    public String getVariableName() {
+        return variableName;
+    }
+
+    public Expression getExpression() {
+        return expression;
+    }
     // evaluates the assignment expression
     // interprets right hand side first to determine numeric value
     // store value in context using variable name and returns assigned value

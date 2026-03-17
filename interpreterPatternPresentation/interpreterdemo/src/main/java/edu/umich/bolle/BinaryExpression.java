@@ -12,6 +12,14 @@ public abstract class BinaryExpression implements Expression {
         this.right = right;
     }
 
+    public Expression getLeft() {
+        return left;
+    }
+
+    public Expression getRight() {
+        return right;
+    }
+
     // this method implemented by the concrete subclasses
     @Override
     public abstract double interpret(Context context);

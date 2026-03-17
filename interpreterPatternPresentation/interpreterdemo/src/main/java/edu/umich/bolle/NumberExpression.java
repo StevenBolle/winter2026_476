@@ -10,6 +10,10 @@ public class NumberExpression implements Expression {
         this.value = value;
     }
 
+    public double getValue() {
+        return value;
+    }
+
     // override interpret in Expression
     @Override
     public double interpret(Context context) {

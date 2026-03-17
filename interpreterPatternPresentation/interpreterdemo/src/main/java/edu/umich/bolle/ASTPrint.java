@@ -20,11 +20,17 @@ public class ASTPrint {
         // get identifier of node
         if (expression instanceof NumberExpression) {
             NumberExpression num = (NumberExpression) expression;
-            System.out.println("Number");
+            System.out.println("Number(" + num.getValue() + ")");
+            return;
         } else if (expression instanceof VariableExpression) {
-            System.out.println("Variable");
+            VariableExpression var = (VariableExpression) expression;
+            System.out.println("Variable(" + var.getName() + ")");
+            return;
         } else if (expression instanceof AssignmentExpression) {
-            System.out.println("Assignment");
+            AssignmentExpression assexp = (AssignmentExpression) expression;
+            System.out.println("Assignment(" + assexp.getVariableName() + ")");
+            print(assexp.getExpression(), level + 1);
+            return;
         } else if (expression instanceof AddExpression) {
             System.out.println("Addition");
         } else if (expression instanceof SubtractExpression) {

@@ -11,6 +11,10 @@ public class VariableExpression implements Expression {
         this.variableName = variableName;
     }
 
+    public String getName() {
+        return variableName;
+    }
+
     @Override
     public double interpret(Context context) {
         return context.getVariableValue(variableName);

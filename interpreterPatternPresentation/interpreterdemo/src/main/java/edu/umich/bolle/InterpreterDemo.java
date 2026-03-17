@@ -38,7 +38,11 @@ public class InterpreterDemo {
                 double result = expression.interpret(context);
 
                 // display result to user
-                System.out.println("Result: " + result);
+                System.out.println("\nResult: " + result);
+                // print the structure of the AST tree to user
+                System.out.println("\nAST Structure: \n");
+                ASTPrint.print(expression);
+                System.out.println();
             } catch (Exception e) {
                 // errors handled at interpreter level
                 System.out.println("Error " + e.getMessage());
