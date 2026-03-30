@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Room Bid System</title>
+</head>
+<body>
+    <h2>Bid on Rooms, Get Booked Today!</h2>
+    <form method="POST">
+        <label>Enter your bid:</label><br>
+        <label>
+            <input type="number" name="bid" step="0.01" required>
+        </label>
+        <br><br>
+        <button type="submit">Submit Bid</button>
+    </form>
+    <br>
+    {% if result %}
+        <h3>Result:</h3>
+        <p>{{result}}</p>
+    {% endif %}
+</body>
+</html>
