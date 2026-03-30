@@ -11,6 +11,6 @@ cd winter2026_476
 ### Navigate to the specific project:
 
 - Hotel Bidding Project
-  - cd hotel-bid-project
+  - cd hotelbidproject
 - Interpreter Pattern Project
   - cd interpreter-pattern
